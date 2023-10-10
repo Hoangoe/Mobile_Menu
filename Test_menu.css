@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    position: absolute;
+    top: 15px;
+    left:15px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    color: #1b1b1b;
+    background-color: #fff;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.btn.click{
+    left: 260px;
+}
+.btn span{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
