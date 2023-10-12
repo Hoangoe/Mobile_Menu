@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
@@ -8,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="Test_menu.css">
+    <link rel="stylesheet" href="./Test_menu.js">
     <title>Document</title>
 </head>
 <body>
@@ -25,9 +27,9 @@
                 <span class="text">Danh mục sản phẩm</span>
                 <ul>
                     <li class="active">
-                        <a href="#">
+                        <a href="#" class="feat-btn">
                             <i class="fa-solid fa-mobile"></i> Điện thoại di động
-                            <span class="fas fa-caret-down"></span></a>
+                            <span class="fas fa-caret-down first"></span></a>
                         <ul class="feat-show">
                             <li><a href="#">Iphone</a>
                                 <a href="#">SamSung</a>
@@ -38,9 +40,9 @@
                     <li>
                         <a href="#"><i class="fa-brands fa-apple"></i> Apple</a></li>
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-laptop"></i> Laptop <span class="fas fa-caret-down"></span></a>
-                        <ul class="feat-show">
+                        <a href="#" class="lap-btn">
+                            <i class="fa-solid fa-laptop"></i> Laptop <span class="fas fa-caret-down second"></span></a>
+                        <ul class="lap-show">
                             <li><a href="#">ASUS</a>
                                 <a href="#">DELL</a>
                                 <a href="#">LENOVO</a>
@@ -49,44 +51,48 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-tablet"></i> Máy tính bảng <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-solid fa-tablet"></i> Máy tính bảng <span class="fas fa-caret-down third"></span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-display"></i> Màn hình <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-solid fa-display"></i> Màn hình <span class="fas fa-caret-down fourth"></span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-tv"></i> Smart TV <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-solid fa-tv"></i> Smart TV <span class="fas fa-caret-down fifth"></span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-stopwatch"></i> Đồng hồ <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-solid fa-stopwatch"></i> Đồng hồ <span class="fas fa-caret-down sixth"></span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-headphones"></i> Âm thanh <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-solid fa-headphones"></i> Âm thanh <span class="fas fa-caret-down seventh"></span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-house-signal"></i> Smart Home <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-solid fa-house-signal"></i> Smart Home <span class="fas fa-caret-down eighth"></span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-usb"></i> Phụ kiện <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-brands fa-usb"></i> Phụ kiện <span class="fas fa-caret-down ninth"></span></a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-gamepad"></i> Đồ chơi công nghệ <span class="fas fa-caret-down"></span></a>
+                            <i class="fa-solid fa-gamepad"></i> Đồ chơi công nghệ <span class="fas fa-caret-down tenth"></span></a>
                     </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-arrows-rotate fa-spin"></i> Máy trôi bảo hành</a></li>
+                    <li>
                 </ul>
             </nav>
+        </div>
         <!-- <div class="horizontal-divider"></div> -->
         <div class="survice">
             <nav class="sidebar-survice">
                 <div class="text"> Dịch vụ và ưu đãi</div>
                 <ul>
-                    <li class="active">
+                    <li>
                         <a href="#">
                             <i class="fa-solid fa-wrench fa-rotate-270"></i> Sửa chữa
                         </a>
@@ -108,26 +114,27 @@
                     </li>
                 </ul>
             </nav>
+        </div>
         <div class="support">
             <nav class="sidebar-support">
                 <div class="text"> Hỗ trợ</div>
                 <ul>
-                    <li class="active">
+                    <li>
                         <a href="#">
                             <i class="fa-solid fa-circle-info"></i> Giới thiệu
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#">
                             <i class="fa-solid fa-user-shield"></i> Tra cứu trung tâm bảo hành
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#">
                             <i class="fa-solid fa-briefcase"></i> Tuyển dụng
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#">
                             <i class="fa-solid fa-box-open"></i> Tra cứu đơn hàng
                         </a>
@@ -135,7 +142,63 @@
                 </ul>
             </nav>
         </div>
-        </div>
     </div>
 </body>
+<script>
+    // debugger
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.lap-btn').click(function(){
+        $('nav ul .lap-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    //   document.querySelector('.sidebar').style.overflow = 'hidden';
+    // Lấy tất cả các phần tử có lớp "dropdown-item-li"
+    // var btns1 = document.getElementsByClassName("feat-show");
+    
+    // // Lặp qua từng phần tử và gắn sự kiện click cho chúng
+    // for (var i = 0; i < btns1.length; i++) {
+    //     btns1[i].addEventListener("click", function() {
+    //         // Loại bỏ lớp "active" từ tất cả các phần tử có lớp "dropdown-item-li"
+    //         for (var j = 0; j < btns1.length; j++) {
+    //             btns1[j].classList.remove("active");
+    //         }
+    
+    //         // Thêm lớp "active" vào phần tử được nhấp vào
+    //         this.classList.add("active");
+    //     });
+    // }
+ </script>
+
+<!-- <script>
+$('.btn').click(function() {
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+});
+
+$('.feat-btn').click(function() {
+    $('nav ul .feat-show').toggleClass("show");
+    $('nav ul .first').toggleClass("rotate");
+});
+
+$('.serv-btn').click(function() {
+    $('nav ul .serv-show').toggleClass("show1");
+    $('nav ul .second').toggleClass("rotate");
+});
+
+$('nav ul li').click(function() {
+    $('nav ul li').removeClass("active"); // Xóa lớp "active" khỏi tất cả các phần tử li
+    $(this).addClass("active"); // Thêm lớp "active" cho phần tử li được nhấp
+});
+
+</script> -->
 </html>
