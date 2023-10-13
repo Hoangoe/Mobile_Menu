@@ -1,0 +1,143 @@
+.log-in{
+  display: flex;
+  height: 1038px;
+  padding: 20px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.avatar{
+display: flex;
+width: 30px;
+height: 30px;
+/* padding: 7.5px 11px 6.5px 10px; */
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background: var(--green-green-1, #009981);
+color: var(--white-white-1, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* H7/Semibold (13) */
+font-family: Inter, sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.user-infor{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+div.text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.welcome{
+  width: 245px;
+  color: var(--black-black-4, #C9C9C9);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* H8/Regular (11) */
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.username{
+  width: 245px;
+  color: var(--black-black-1, #191919);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* H7/Semibold (13) */
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.log-out{
+  display: flex;
+  padding: 5px 12px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+Span.text{
+  width: 230px;
+  height: 25px;
+  color: var(--red-red-1, #FD475A);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* H7/Regular (13) */
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.mobile-text{
+  width: 198px;
+  color: var(--green-green-1, #009981);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* H7/Semibold (13) */
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.mobile-content{
+  display: flex;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 5px;
+  background: var(--green-green-4, #DBF9EB);
+}
+.mobile-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.Iphone, .Nokia, .Samsung, .Oppo{
+  display: flex;
+  width: 207px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--white-white-1, #FFF);
+  color: var(--black-black-3, #757575);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* H7/Semibold (13) */
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Iphone:hover, .Nokia:hover, .Oppo:hover, .Samsung:hover{
+  color: var(--green-green-1, #009981);
+  font-feature-settings: 'clig' off, 'liga' off;
+  background: var(--green-green-4, #DBF9EB);
+}

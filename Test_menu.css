@@ -19,7 +19,7 @@
     transition: left 0.4s ease;
 }
 .btn.click{
-    left: 260px;
+    left: 350px;
 }
 .btn span{
     color: rgb(110, 108, 108);
@@ -31,9 +31,9 @@
 }
 .sidebar{
     position: fixed;
-    width: 250px;
+    width: 325px;
     height: 100%;
-    left: -250px;
+    left: -330px;
     background: #fff;
     overflow: auto;
     transition: left 0.4s ease;
@@ -62,7 +62,7 @@ nav ul li{
 }
 nav ul li a{
     position: relative;
-    color: red;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
     padding-left: 40px;
@@ -72,12 +72,12 @@ nav ul li a{
     border-left:  3px solid transparent;
 }
 nav ul li.active a{
-    color: cyan;
+    color: rgb(140, 146, 146);
     background: #fff;
     border-left-color:rgb(110, 108, 108);
 }
 nav ul li a:hover{
-    background: rgb(110, 108, 108);
+    background: rgb(192, 187, 187);
 }
 nav ul ul{
  position: static;
@@ -123,4 +123,15 @@ nav ul li a span.rotate{
     height: 1px; 
     background-color: #000; 
     margin: 3px 10px 3px 10px ;
+}
+span.text{
+    color: var(--black-black-4, #C9C9C9);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* H8/Regular (11) */
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
