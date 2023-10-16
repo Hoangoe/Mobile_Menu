@@ -4,12 +4,12 @@
     padding: 0;
     user-select: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .btn{
     position: absolute;
     top: 15px;
-    left:15px;
+    left: 15px;
     height: 15px;
     width: 15px;
     text-align: center;
@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+    margin: 20px 12px 12px 12px;
 }
 .sign-in{
     width: 20px;
@@ -53,6 +54,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    
 }
 .horizontal-divider{
     height: 2px;
@@ -60,10 +62,12 @@
     align-self: stretch;
     border-radius: 2px;
     background: var(--black-black-6, #F3F3F3);
+    margin: 12px 12px;
 }
 .sidebar{
     position: fixed;
-    width: 325px;
+    width: 100%;
+    max-width: 310px;
     height: 100%;
     left: -330px;
     background: #fff;
@@ -77,13 +81,26 @@
     left: 0px;
 }
 .sidebar .not-logged-in{
-    color:#1b1b1b;
+    color:#757575;
     font-size: 14px;
     font-weight: 600;
     line-height: 65px;
     text-align: center;
     background: #fff;
     letter-spacing: 1px;
+}
+span.text{
+    width: 80%;
+    color: var(--black-black-3, #757575);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* H7/Semibold (13) */
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px 12px;
 }
 nav ul{
     background: #fff;
@@ -92,27 +109,30 @@ nav ul{
     list-style: none;
 }
 nav ul li{
-    line-height: 60px;
+    line-height: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* width: 286px;
+    margin: 10px 12px; */
 }
 nav ul li a{
     position: relative;
-    color: rgb(0, 0, 0);
+    color: #757575;
     text-decoration: none;
     font-size: 18px;
-    padding-left: 40px;
+    padding: 10px 12px; 
     font-weight: 500;
     display: block;
     width: 100%;
-    border-left:  3px solid transparent;
+    border-left:  13px solid transparent;
 }
 nav ul li.active a{
-    color: rgb(140, 146, 146);
+    color: #8c9292;
     background: #fff;
-    border-left-color:rgb(110, 108, 108);
 }
 nav ul li a:hover{
-    background: rgb(192, 187, 187);
+    color: var(--green-green-1, #009981);
+    border-radius: 5px;
+    background: var(--green-green-4, #DBF9EB);
 }
 nav ul ul{
  position: static;
@@ -125,11 +145,11 @@ nav ul .lap-show.show1{
     display: block;
 }
 nav ul ul li{
-    line-height: 42px;
+    line-height: 16px;
     border-top: none;
 }
 nav ul ul li a{
-    font-size: 17px;
+    font-size: 13px;
     color: #e6e6e6;
     padding-left: 80px;
 }
@@ -153,7 +173,7 @@ nav ul li a span{
 nav ul li a span.rotate{
    transform: translateY(-50%) rotate(-180deg);
 }
-span.text{
+span.content{
     color: var(--black-black-4, #C9C9C9);
     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -163,4 +183,5 @@ span.text{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 12px 12px 6px 12px;
 }
