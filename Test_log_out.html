@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="./Test_log_out.css">
   <title>Document</title>
 </head>
 <body>
+  <div class="btn">
+    <span class="fas fa-bars"></span>
+  </div>
+  <div class="sidebar">
   <div class="log-in">
     <div class="user-infor">
       <div class="avatar">K</div>
@@ -16,134 +21,14 @@
         </div>
       </div>
     <div class="log-out">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M14.5333 12.1833L16.6667 10.05L14.5333 7.91663" stroke="#FD475A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M8.1333 10.05H16.6083" stroke="#FD475A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M9.79997 16.6667C6.11663 16.6667 3.1333 14.1667 3.1333 10C3.1333 5.83337 6.11663 3.33337 9.79997 3.33337" stroke="#FD475A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <span class="text">Đăng xuất tài khoản</span>
     </div>
-    <div class="deviced">
-      <nav class="sidebar-deviced">
-        <span class="text">Danh mục sản phẩm</span>
-        <ul>
-          <li class="active">
-            <a href="#" class="feat-btn">
-              <i class="fa-solid fa-mobile"></i> Điện thoại di động
-              <span class="fas fa-caret-down first"></span></a>
-                <ul class="feat-show">
-                  <li><a href="#">Iphone</a>
-                    <a href="#">SamSung</a>
-                    <a href="#">Oppo</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-apple"></i> Apple</a></li>
-            <li>
-              <a href="#" class="lap-btn">
-                    <i class="fa-solid fa-laptop"></i> Laptop <span class="fas fa-caret-down second"></span></a>
-                <ul class="lap-show">
-                  <li><a href="#">ASUS</a>
-                        <a href="#">DELL</a>
-                        <a href="#">LENOVO</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-tablet"></i> Máy tính bảng <span class="fas fa-caret-down third"></span></a>
-            </li>
-            <li>
-              <a href="#">
-                    <i class="fa-solid fa-display"></i> Màn hình <span class="fas fa-caret-down fourth"></span></a>
-            </li>
-            <li>
-              <a href="#">
-                    <i class="fa-solid fa-tv"></i> Smart TV <span class="fas fa-caret-down fifth"></span></a>
-            </li>
-            <li>
-                <a href="#">
-                  <i class="fa-solid fa-stopwatch"></i> Đồng hồ <span class="fas fa-caret-down sixth"></span></a>
-            </li>
-            <li>
-                <a href="#">
-                  <i class="fa-solid fa-headphones"></i> Âm thanh <span class="fas fa-caret-down seventh"></span></a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-house-signal"></i> Smart Home <span class="fas fa-caret-down eighth"></span></a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-usb"></i> Phụ kiện <span class="fas fa-caret-down ninth"></span></a>
-                </li>
-                <li>
-                <a href="#">
-                    <i class="fa-solid fa-gamepad"></i> Đồ chơi công nghệ <span class="fas fa-caret-down tenth"></span></a>
-                  </li>
-            <li>
-                <a href="#"><i class="fa-solid fa-arrows-rotate fa-spin"></i> Máy trôi bảo hành</a></li>
-                <li>
-        </ul>
-    </nav>
-</div>
-<!-- <div class="horizontal-divider"></div> -->
-<div class="survice">
-  <nav class="sidebar-survice">
-        <div class="text"> Dịch vụ và ưu đãi</div>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-wrench fa-rotate-270"></i> Sửa chữa
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-regular fa-lightbulb"></i> Dịch vụ
-                  </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-newspaper"></i> Tin hot
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                    <i class="fa-solid fa-bolt-lightning"></i> Ưu đãi
-                  </a>
-                </li>
-              </ul>
-            </nav>
-</div>
-<div class="support">
-  <nav class="sidebar-support">
-    <div class="text"> Hỗ trợ</div>
-        <ul>
-          <li>
-            <a href="#">
-                    <i class="fa-solid fa-circle-info"></i> Giới thiệu
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-user-shield"></i> Tra cứu trung tâm bảo hành
-                  </a>
-                </li>
-                <li>
-                <a href="#">
-                  <i class="fa-solid fa-briefcase"></i> Tuyển dụng
-                </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-box-open"></i> Tra cứu đơn hàng
-              </a>
-            </li>
-        </ul>
-    </nav>
-</div>
-</div>
+    <div class="horizontal-divider"></div>
   <!-- <div class="mobile">
     <div class="mobile-content">
       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
@@ -185,5 +70,24 @@
     </div> -->
   </div>
 </div>
+</div>
+<script>
+  // debugger
+  $('.btn').click(function(){
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+  });
+    $('.feat-btn').click(function(){
+      $('nav ul .feat-show').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+    });
+    $('.lap-btn').click(function(){
+      $('nav ul .lap-show').toggleClass("show1");
+      $('nav ul .second').toggleClass("rotate");
+    });
+    $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+ </script>
 </body>
 </html>
