@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+/* ---------------------------------------------- */
 .btn{
   position: absolute;
   top: 15px;
@@ -22,11 +30,28 @@
   content: '\f00d'
 }
 /* ----------------------------------------- */
+.sidebar{
+  position: fixed;
+  width: 100%;
+  max-width: 311px;
+  height: 100%;
+  left: -330px;
+  background: #fff;
+  overflow: auto ;
+  transition: left 0.4s ease;
+}
+.sidebar::-webkit-scrollbar{
+  height: 10px;
+}
+.sidebar.show{
+  left: 0px;
+}
+/* ------------------------------------------------- */
 .log-in{
   display: flex;
   width: 100%;
   max-width: 311px;
-  height: 100%;
+  /* height: 100%; */
   max-height: 1168px;
   padding: 20px 12px;
   flex-direction: column;
@@ -34,6 +59,11 @@
   gap: 12px;
   border-radius: 0px 10px 10px 0px;
   background: var(--white-white-1, #FFF);
+  /* margin: ;
+  padding: 20px 12px;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; */
 }
 .avatar{
 display: flex;
@@ -62,6 +92,7 @@ line-height: normal;
 div.text{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   gap: 4px;
 }
@@ -91,6 +122,7 @@ div.text{
 }
 .log-out{
   display: flex;
+  width: 100%;
   padding: 10px 12px;
   justify-content: flex-start;
   align-items: center;
@@ -103,7 +135,7 @@ div.text{
   justify-content: center;
   align-items: center;
 }
-Span.text{
+Span.text-log-out{
   width: 230px;
   height: 20px;
   color: var(--red-red-1, #FD475A);
@@ -115,22 +147,22 @@ Span.text{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
+div.log-out:hover{
+  border-radius: 5px;
+  background: var(--red-red-4, #FFDADE);  
+}
+/* ----------------------------------------------------- */
 .horizontal-divider{
   height: 2px;
   flex-shrink: 0;
   align-self: stretch;
   border-radius: 2px;
   background: var(--black-black-6, #F3F3F3);
-  margin: 12px 12px;
 }
-div.log-out:hover{
-  border-radius: 5px;
-  background: var(--red-red-4, #FFDADE);  
-}
+/* ----------------------------------------------------------- */
 span.content{
-  width: 286px;
   color: var(--black-black-4, #C9C9C9);
   font-feature-settings: 'clig' off, 'liga' off;
 
@@ -141,17 +173,104 @@ span.content{
   font-weight: 400;
   line-height: normal;
 }
-/* #type{
-  stroke: rgb(0, 0, 0);
-  width: 13px;
-  height: 122px;
-} */
-div.text{
+span.text{
+  width: 80%;
+  color: var(--black-black-3, #757575);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* H7/Semibold (13) */
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 12px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
 }
-
-
+nav ul{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* width: 286px;
+  margin: 10px 12px; */
+}
+nav ul li a{
+  position: relative;
+  color: #757575;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 12px; 
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left:  13px solid transparent;
+  margin-left: 3px;
+  border-left-width: 5px;
+}
+nav ul li.active a{
+  color: #757575;
+  background: #fff;
+}
+nav ul li a:hover{
+  color: var(--green-green-1, #009981);
+  border-radius: 5px;
+  background: var(--green-green-4, #DBF9EB);  
+}
+nav ul li a:hover svg path{
+  stroke: #009981;
+}
+nav ul li a span:hover{
+  color: var(--green-green-1, #009981);
+}
+nav ul ul{
+position: static;
+display: none;
+}
+nav ul .feat-show.show{
+  display: block;
+}
+nav ul .lap-show.show1{
+  display: block;
+}
+nav ul ul li{
+  line-height: 16px;
+  border-top: none;
+  padding-top: 8px;
+  padding-left: 55px;
+  padding-right: 5px;
+}
+nav ul ul li a{
+  font-size: 13px;
+  color: #e6e6e6;
+  padding-left: 12px;
+}
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+nav ul li a span.rotate{
+ transform: translateY(-50%) rotate(-180deg);
+}
+/* ----------------------------------- */
+.deviced, .survice, .support{
+  width: 100%;
+}
+/* ------------------------------------- */
+/* @media screen and (min-width: 280px) {
+}
+@media screen and (max-width: 1280px) {
+} */
 
 
 

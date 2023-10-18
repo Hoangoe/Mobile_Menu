@@ -29,6 +29,7 @@
 .btn.click span:before{
     content: '\f00d'
 }
+/* --------------------------------------------- */
 .not-logged-in{
     display: flex;
     padding: 10px 12px;
@@ -48,21 +49,12 @@
     color: var(--green-green-1, #009981);
     font-feature-settings: 'clig' off, 'liga' off;
 
-    /* H7/Regular (13) */
     font-family: Inter, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     
-}
-.horizontal-divider{
-    height: 2px;
-    flex-shrink: 0;
-    align-self: stretch;
-    border-radius: 2px;
-    background: var(--black-black-6, #F3F3F3);
-    margin: 12px 12px;
 }
 .sidebar{
     position: fixed;
@@ -88,6 +80,14 @@
     text-align: center;
     background: #fff;
     letter-spacing: 1px;
+}
+.horizontal-divider{
+    height: 2px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 2px;
+    background: var(--black-black-6, #F3F3F3);
+    margin: 12px 12px;
 }
 span.text{
     width: 80%;
