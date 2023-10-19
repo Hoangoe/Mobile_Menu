@@ -59,6 +59,7 @@
   gap: 12px;
   border-radius: 0px 10px 10px 0px;
   background: var(--white-white-1, #FFF);
+  cursor: pointer;
   /* margin: ;
   padding: 20px 12px;
   user-select: none;
