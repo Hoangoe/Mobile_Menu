@@ -8,18 +8,18 @@
 /* ---------------------------------------------- */
 .btn{
   position: absolute;
+  z-index: 2;
   top: 15px;
   left: 15px;
   height: 15px;
   width: 15px;
   text-align: center;
   color: #1b1b1b;
-  background-color: #fff;
   cursor: pointer;
   transition: left 0.4s ease;
 }
 .btn.click{
-  left: 309px;
+  left: 83%;
 }
 .btn span{
   color: rgb(110, 108, 108);
@@ -33,7 +33,7 @@
 .sidebar{
   position: fixed;
   width: 100%;
-  max-width: 311px;
+  /* max-width: 311px; */
   height: 100%;
   left: -330px;
   background: #fff;
@@ -209,7 +209,7 @@ nav ul li a{
   padding: 10px 12px; 
   font-weight: 500;
   display: block;
-  width: 100%;
+  width: 99%;
   border-left:  13px solid transparent;
   margin-left: 3px;
   border-left-width: 5px;
