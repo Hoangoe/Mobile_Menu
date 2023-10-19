@@ -54,7 +54,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+}
+div.not-logged-in:hover{
+    background: var(--green-green-4, #DBF9EB);
+    border-radius: 5px;
+    cursor: pointer;
 }
 .sidebar{
     position: fixed;
