@@ -3,7 +3,7 @@
   padding: 0;
   user-select: none;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
 }
 /* ---------------------------------------------- */
 .btn{
@@ -211,6 +211,7 @@ nav ul li a{
   font-weight: 500;
   display: block;
   width: 99%;
+  font-family: 'Inter', sans-serif;
   border-left:  13px solid transparent;
   margin-left: 3px;
   border-left-width: 5px;
@@ -268,32 +269,38 @@ nav ul li a span.rotate{
   width: 100%;
 }
 /* ------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* @media screen and (min-width: 280px) {
 }
 @media screen and (max-width: 1280px) {
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* .mobile{
   display: flex;
   flex-direction: column;
