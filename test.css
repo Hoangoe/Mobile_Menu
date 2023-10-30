@@ -1,0 +1,18 @@
+div{
+    margin-bottom: -5px;
+}
+#samsung{
+    color: var(--black-black-3, #757575);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* H7/Semibold (13) */
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+span{
+    padding-bottom: 0;
+}
