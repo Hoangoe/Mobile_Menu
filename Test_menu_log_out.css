@@ -237,6 +237,7 @@ display: none;
 }
 nav ul .feat-show.show{
   display: block;
+  /* transition: opacity 0.3s, max-height 0.3s; */
 }
 nav ul .lap-show.show1{
   display: block;
