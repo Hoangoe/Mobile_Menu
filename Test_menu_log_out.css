@@ -213,7 +213,7 @@ nav ul li a{
   width: 99%;
   font-family: 'Inter', sans-serif;
   border-left:  13px solid transparent;
-  margin-left: 3px;
+  /* margin-left: 3px; */
   border-left-width: 5px;
 }
 nav ul li.active a{
@@ -243,16 +243,16 @@ nav ul .lap-show.show1{
   display: block;
 }
 nav ul ul li{
+  display: flex;
   line-height: 16px;
   border-top: none;
   padding-top: 8px;
-  padding-left: 55px;
-  padding-right: 5px;
+  padding-left: 30px;
 }
 nav ul ul li a{
   font-size: 13px;
   color: #e6e6e6;
-  padding-left: 12px;
+  padding: 8px 12px;
 }
 nav ul li a span{
   position: absolute;
@@ -265,11 +265,157 @@ nav ul li a span{
 nav ul li a span.rotate{
  transform: translateY(-50%) rotate(-180deg);
 }
+.name-mobile{
+  width: 100%;
+}
+.name-lap{
+  width: 100%;
+}
 /* ----------------------------------- */
 .deviced, .survice, .support{
   width: 100%;
 }
 /* ------------------------------------- */
+
+
+/* --------------------------------------------------------------------- */
+
+.parent-div {
+  width: 13px;
+  height: 160px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-right: 12px;
+}
+.FRAME-18-11 {
+  transform: rotate(0deg);
+  position: relative;
+  width: 13px;
+  height: 160px;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+  overflow: hidden;
+}
+.RECTANGLE-18-12 {
+  position: absolute;
+  left: 0px;
+  top: 12px;
+  transform: rotate(0deg);
+  transform-origin: center !important;
+
+  border-top: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+
+  border-left: 2px solid rgba(243, 243, 243, 1);
+
+  border-right: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom-left-radius: 8px;
+
+  width: 13px;
+  height: 8px;
+  opacity: 1;
+}
+.RECTANGLE-18-13 {
+  position: absolute;
+  left: 0px;
+  top: 44px;
+  transform: rotate(0deg);
+  transform-origin: center !important;
+
+  border-top: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+
+  border-left: 2px solid rgba(243, 243, 243, 1);
+
+  border-right: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom-left-radius: 8px;
+
+  width: 13px;
+  height: 8px;
+  opacity: 1;
+}
+.RECTANGLE-18-14 {
+  position: absolute;
+  left: 0px;
+  top: 76px;
+  transform: rotate(0deg);
+  transform-origin: center !important;
+
+  border-top: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+
+  border-left: 2px solid rgba(243, 243, 243, 1);
+
+  border-right: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom-left-radius: 8px;
+
+  width: 13px;
+  height: 8px;
+  opacity: 1;
+}
+.RECTANGLE-18-15 {
+  position: absolute;
+  left: 0px;
+  top: 113px;
+  transform: rotate(0deg);
+  transform-origin: center !important;
+
+  border-top: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+
+  border-left: 2px solid rgba(243, 243, 243, 1);
+
+  border-right: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom-left-radius: 8px;
+
+  width: 13px;
+  height: 8px;
+  opacity: 1;
+}
+.RECTANGLE-18-19 {
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  transform: rotate(0deg);
+  transform-origin: center !important;
+
+  border-top: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+
+  border-left: 2px solid rgba(243, 243, 243, 1);
+
+  border-right: 0px solid rgba(243, 243, 243, 1);
+
+  border-bottom-left-radius: 8px;
+
+  width: 13px;
+  height: 8px;
+  opacity: 1;
+}
+.RECTANGLE-18-16 {
+  position: absolute;
+  left: 0px;
+  top: -0.5041322112083435px;
+  transform: rotate(0deg);
+  transform-origin: center !important;
+  background: rgba(243, 243, 243, 1);
+
+  width: 2px;
+  height: 152.24794006347656px;
+  opacity: 1;
+}
 
 
 
