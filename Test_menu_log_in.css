@@ -228,7 +228,7 @@ span.content{
     opacity: 1;
     overflow: hidden;
   }
-  .RECTANGLE-18-12 {
+  #RECTANGLE-18-12 {
     position: absolute;
     left: 0px;
     top: 12px;
@@ -249,7 +249,7 @@ span.content{
     height: 8px;
     opacity: 1;
   }
-  .RECTANGLE-18-13 {
+  #RECTANGLE-18-13 {
     position: absolute;
     left: 0px;
     top: 44px;
@@ -270,7 +270,7 @@ span.content{
     height: 8px;
     opacity: 1;
   }
-  .RECTANGLE-18-14 {
+  #RECTANGLE-18-14 {
     position: absolute;
     left: 0px;
     top: 76px;
@@ -291,7 +291,7 @@ span.content{
     height: 8px;
     opacity: 1;
   }
-  .RECTANGLE-18-15 {
+  #RECTANGLE-18-15 {
     position: absolute;
     left: 0px;
     top: 106px;
@@ -312,7 +312,7 @@ span.content{
     height: 8px;
     opacity: 1;
   }
-  .RECTANGLE-18-19 {
+  #RECTANGLE-18-19 {
     position: absolute;
     left: 0px;
     top: 138px;

@@ -1,139 +1,55 @@
-body{
-  background-color: red;
+/* media query for ipads */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+    font-size: 24px; /* Reduces size of header font */
+    }
 }
-.parent-div {
-    width: 13px;
-    height: 160px;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  .FRAME-1-3 {
-    transform: rotate(0deg);
+html, body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin:0;
+}
+header {
+  font-size: 32px;
+}
+#navbar {
+  position: fixed;
+  text-decoration: none;
+  width: 10vw;
+  min-width: 300px;
+  left: 0px;
+  border-right: 1px solid #000;
+  height: 100%;
+  text-align: center;
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  border-top: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+#main-doc {
+  display: inline;
+  margin-left: 320px;
+}
+code {  /* took this from the examples :) */
+    white-space: pre;
     position: relative;
-    width: 13px;
-    height: 160px;
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    overflow: hidden;
-  }
-  .RECTANGLE-24-10 {
-    position: absolute;
-    left: 0px;
-    top: 150px;
-    transform: rotate(0deg);
-    transform-origin: center !important;
-  
-    border-top: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom: 2px solid rgba(243, 243, 243, 1);
-  
-    border-left: 2px solid rgba(243, 243, 243, 1);
-  
-    border-right: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom-left-radius: 8px;
-  
-    width: 13px;
-    height: 8px;
-    opacity: 0;
-  }
-  .RECTANGLE-1-4 {
-    position: absolute;
-    left: 0px;
-    top: 12px;
-    transform: rotate(0deg);
-    transform-origin: center !important;
-  
-    border-top: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom: 2px solid rgba(243, 243, 243, 1);
-  
-    border-left: 2px solid rgba(243, 243, 243, 1);
-  
-    border-right: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom-left-radius: 8px;
-  
-    width: 13px;
-    height: 8px;
-    opacity: 1;
-  }
-  .RECTANGLE-1-5 {
-    position: absolute;
-    left: 0px;
-    top: 44px;
-    transform: rotate(0deg);
-    transform-origin: center !important;
-  
-    border-top: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom: 2px solid rgba(243, 243, 243, 1);
-  
-    border-left: 2px solid rgba(243, 243, 243, 1);
-  
-    border-right: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom-left-radius: 8px;
-  
-    width: 13px;
-    height: 8px;
-    opacity: 1;
-  }
-  .RECTANGLE-1-6 {
-    position: absolute;
-    left: 0px;
-    top: 76px;
-    transform: rotate(0deg);
-    transform-origin: center !important;
-  
-    border-top: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom: 2px solid rgba(243, 243, 243, 1);
-  
-    border-left: 2px solid rgba(243, 243, 243, 1);
-  
-    border-right: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom-left-radius: 8px;
-  
-    width: 13px;
-    height: 8px;
-    opacity: 1;
-  }
-  .RECTANGLE-1-7 {
-    position: absolute;
-    left: 0px;
-    top: 113px;
-    transform: rotate(0deg);
-    transform-origin: center !important;
-  
-    border-top: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom: 2px solid rgba(243, 243, 243, 1);
-  
-    border-left: 2px solid rgba(243, 243, 243, 1);
-  
-    border-right: 0px solid rgba(243, 243, 243, 1);
-  
-    border-bottom-left-radius: 8px;
-  
-    width: 13px;
-    height: 8px;
-    opacity: 1;
-  }
-  .RECTANGLE-1-8 {
-    position: absolute;
-    left: 0px;
-    top: -1px;
-    transform: rotate(0deg);
-    transform-origin: center !important;
-    background: rgba(243, 243, 243, 1);
-  
-    width: 2px;
-    height: 114px;
-    opacity: 1;
-  }
-  
+    word-break: normal;
+    word-wrap: normal;
+    display: block;
+    text-align: left;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
