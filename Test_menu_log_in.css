@@ -158,6 +158,7 @@ nav ul .lap-show.show1{
 }
 nav ul ul li{
     display: flex;
+    flex-direction: column;
     line-height: 16px;
     border-top: none;
     padding-top: 8px;
@@ -209,7 +210,7 @@ span.content{
 
 /* -------------------------------------------------------------- */
 
-.parent-div {
+/* .parent-div {
     width: 13px;
     height: 160px;
     overflow: hidden;
@@ -345,4 +346,4 @@ span.content{
     height: 142.24794006347656px;
     opacity: 1;
   }
-  
+   */
