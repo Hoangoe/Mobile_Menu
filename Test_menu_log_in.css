@@ -203,9 +203,11 @@ span.content{
 }
 .name-mobile{
     width: 100%;
+    display: flex;
 }
 .name-lap{
     width: 100%;
+    display: flex;
 }
 
 /* -------------------------------------------------------------- */
