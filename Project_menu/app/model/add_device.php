@@ -1,5 +1,18 @@
 <?php
 session_start();
+require_once("./common/database.php");
+try{
+  $con_PDO = new PDO ("mysql:host=$servername;dbname=$dbname", $username, $password);
+}catch (PDOException $e){
+  echo($e -> getMessage());
+}
+?>
+<?php
+if (isset($_POST["button"])){
+  if ($_POST["button"] == "Sent"){
+    
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +23,7 @@ session_start();
 </head>
 <body>
 <div class="add">
-    <form action="submit" method="post">
+    <form action="submit" method="POST">
     <span href="">Tên sản phẩm: <input type="name"></span>
     <button type="submit">Sent</button>
   </form>
